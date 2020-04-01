@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		7BBC06692433565100059197 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBC06682433565100059197 /* AppDelegate.swift */; };
 		7BBC066B2433565100059197 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBC066A2433565100059197 /* SceneDelegate.swift */; };
-		7BBC066D2433565100059197 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBC066C2433565100059197 /* ViewController.swift */; };
+		7BBC066D2433565100059197 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBC066C2433565100059197 /* OnboardingViewController.swift */; };
 		7BBC06702433565100059197 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BBC066E2433565100059197 /* Main.storyboard */; };
 		7BBC06722433565300059197 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BBC06712433565300059197 /* Assets.xcassets */; };
 		7BBC06752433565300059197 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BBC06732433565300059197 /* LaunchScreen.storyboard */; };
+		7BC19C232434A69300E34D6E /* OnboardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC19C222434A69300E34D6E /* OnboardingItem.swift */; };
+		7BC19C272434ABDF00E34D6E /* QuoteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC19C262434ABDF00E34D6E /* QuoteCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7BBC06652433565100059197 /* onboarding-fashion-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "onboarding-fashion-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BBC06682433565100059197 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BBC066A2433565100059197 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7BBC066C2433565100059197 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7BBC066C2433565100059197 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		7BBC066F2433565100059197 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BBC06712433565300059197 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BBC06742433565300059197 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BBC06762433565300059197 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BC19C222434A69300E34D6E /* OnboardingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItem.swift; sourceTree = "<group>"; };
+		7BC19C262434ABDF00E34D6E /* QuoteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		7BBC06672433565100059197 /* onboarding-fashion-app */ = {
 			isa = PBXGroup;
 			children = (
+				7BC19C252434ABC200E34D6E /* Views */,
+				7BC19C242434ABB700E34D6E /* Controllers */,
+				7BC19C212434A68200E34D6E /* Models */,
 				7BBC06682433565100059197 /* AppDelegate.swift */,
 				7BBC066A2433565100059197 /* SceneDelegate.swift */,
-				7BBC066C2433565100059197 /* ViewController.swift */,
 				7BBC066E2433565100059197 /* Main.storyboard */,
 				7BBC06712433565300059197 /* Assets.xcassets */,
 				7BBC06732433565300059197 /* LaunchScreen.storyboard */,
 				7BBC06762433565300059197 /* Info.plist */,
 			);
 			path = "onboarding-fashion-app";
+			sourceTree = "<group>";
+		};
+		7BC19C212434A68200E34D6E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7BC19C222434A69300E34D6E /* OnboardingItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7BC19C242434ABB700E34D6E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7BBC066C2433565100059197 /* OnboardingViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7BC19C252434ABC200E34D6E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7BC19C262434ABDF00E34D6E /* QuoteCollectionViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +168,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BBC066D2433565100059197 /* ViewController.swift in Sources */,
+				7BBC066D2433565100059197 /* OnboardingViewController.swift in Sources */,
+				7BC19C232434A69300E34D6E /* OnboardingItem.swift in Sources */,
+				7BC19C272434ABDF00E34D6E /* QuoteCollectionViewCell.swift in Sources */,
 				7BBC06692433565100059197 /* AppDelegate.swift in Sources */,
 				7BBC066B2433565100059197 /* SceneDelegate.swift in Sources */,
 			);
